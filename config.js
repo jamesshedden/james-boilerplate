@@ -20,8 +20,6 @@ System.config({
     "babel-runtime": "npm:babel-runtime@4.7.16",
     "lodash": "npm:lodash@3.6.0",
     "normalize.css": "github:necolas/normalize.css@3.0.3",
-    "react": "npm:react@0.13.1",
-    "react-router": "npm:react-router@0.13.2",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },

@@ -11,7 +11,6 @@
     "connect": "^3.3.5",
     "fb-flo": "^0.4.0",
     "jspm": "^0.15.0-beta",
-    "lodash": "^3.6.0",
     "minimist": "^1.1.1",
     "read-file-stdin": "^0.2.0",
     "rework": "^1.0.1",
@@ -23,10 +22,8 @@
   "jspm": {
     "directories": {},
     "dependencies": {
-      "lodash": "npm:lodash@^3.5.0",
-      "normalize.css": "github:necolas/normalize.css@^3.0.2",
-      "react": "npm:react@^0.13.1",
-      "react-router": "npm:react-router@^0.13.2"
+      "lodash": "npm:lodash@^3.6.0",
+      "normalize.css": "github:necolas/normalize.css@^3.0.2"
     },
     "devDependencies": {
       "babel": "npm:babel@^4.7.16",

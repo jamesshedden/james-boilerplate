@@ -1,0 +1,14 @@
+#!/bin/bash
+# Usage: script/start
+# Starts the projects's development server.
+
+set -e errexit
+
+ulimit -n 10240
+
+./script/css
+echo -e "\033[32mCompiled CSS ✓\033[0m"
+
+node ./script/lib/watch.js --root ./client &
+
+node ./script/lib/serve.js

@@ -2,31 +2,39 @@
   "name": "jsbp",
   "version": "0.0.1",
   "license": "ISC",
+  "scripts": {
+    "start": "./script/start",
+    "serve": "node ./script/lib/serve.js"
+  },
   "devDependencies": {
-    "angular": "^1.2.19",
-    "browserify": "^5.9.1",
-    "browserify-shim": "^3.8.2",
-    "gulp": "^3.8.7",
-    "gulp-autoprefixer": "0.0.8",
-    "gulp-browserify": "^0.5.0",
-    "gulp-concat": "^2.3.4",
-    "gulp-connect": "^2.0.6",
-    "gulp-jshint": "^1.8.4",
-    "gulp-open": "^0.2.8",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^0.7.2",
-    "gulp-uglify": "^0.3.1",
-    "gulp-util": "^3.0.0"
+    "autoprefixer-core": "^5.1.8",
+    "connect": "^3.3.5",
+    "fb-flo": "^0.4.0",
+    "jspm": "^0.15.0-beta",
+    "lodash": "^3.6.0",
+    "minimist": "^1.1.1",
+    "read-file-stdin": "^0.2.0",
+    "rework": "^1.0.1",
+    "rework-import": "^2.0.1",
+    "rework-vars": "^3.1.1",
+    "serve-static": "^1.9.2",
+    "write-file-stdout": "0.0.2"
   },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
-  },
-  "browser": {
-    "angular": "./node_modules/angular/angular.js"
-  },
-  "browserify-shim": {
-    "angular": "angular"
+  "jspm": {
+    "directories": {},
+    "dependencies": {
+      "lodash": "npm:lodash@^3.5.0",
+      "normalize.css": "github:necolas/normalize.css@^3.0.2",
+      "react": "npm:react@^0.13.1",
+      "react-router": "npm:react-router@^0.13.2"
+    },
+    "devDependencies": {
+      "babel": "npm:babel@^4.7.16",
+      "babel-runtime": "npm:babel-runtime@^4.7.16"
+    },
+    "buildConfig": {
+      "transpileES6": true,
+      "minify": true
+    }
   }
 }

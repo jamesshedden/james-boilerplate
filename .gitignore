@@ -1,5 +1,6 @@
-build/
 node_modules
+jspm_packages
 .DS_Store
 .sass-cache
 npm-debug.log
+client/app-compiled

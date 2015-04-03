@@ -1,0 +1,11 @@
+#!/bin/bash
+# Usage: script/css
+# Runs the projects's citest suite.
+
+set -e errexit
+
+if [ ! -x client/app-compiled/css ]; then
+  mkdir -p client/app-compiled/css
+fi
+
+./script/lib/css.js client/assets/stylesheets/main.css client/app-compiled/css/main-compiled.css

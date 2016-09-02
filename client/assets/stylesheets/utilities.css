@@ -1,0 +1,72 @@
+.u-text-heading {
+  font-family: var(--font-family-heading);
+  font-weight: normal;
+}
+
+.u-text-base {
+  font-family: var(--font-family-base);
+  line-height: 1.5;
+}
+
+.u-color-blue {
+  color: var(--color-blue);
+}
+
+.u-color-red {
+  color: var(--color-red);
+}
+
+.u-color-yellow {
+  color: var(--color-yellow);
+}
+
+.u-color-dark-grey {
+  color: var(--color-dark-grey);
+}
+
+.u-font-size-xl {
+  font-size: var(--font-size-xl);
+}
+
+.u-font-size-l {
+  font-size: var(--font-size-l);
+}
+
+.u-font-size-m {
+  font-size: var(--font-size-m);
+}
+
+.u-font-size-s {
+  font-size: var(--font-size-s);
+}
+
+.u-link {
+  padding-bottom: 1px;
+}
+
+.u-link, .u-link:visited {
+  text-decoration: none;
+  color: var(--color-red);
+  border-bottom: 1px solid var(--color-blue);
+}
+
+.u-link:hover, .u-link:active {
+  color: var(--color-blue);
+  border-bottom: 1px solid var(--color-red);
+}
+
+.u-background-yellow {
+  background: var(--color-yellow);
+}
+
+.u-display-block {
+  display: block;
+}
+
+.u-text-decoration-none {
+  text-decoration: none;
+}
+
+.u-text-align-center {
+  text-align: center;
+}

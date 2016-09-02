@@ -1,0 +1,10 @@
+.site-container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+@media (max-width: 720px) {
+  .site-container {
+    width: 100%;
+  }
+}

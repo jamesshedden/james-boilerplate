@@ -1,12 +1,26 @@
 :root {
-  
-  /*
 
-  CSS Variables here!
-  
-  eg
-  --body-background-color: #eee;
+  --font-family-heading: Bagnard;
+  --font-family-base: GT Walsheim;
 
-  */
+  --color-blue: #1CA6CF;
+  --color-red: #FF5400;
+  --color-yellow: #FFFAD9;
+  --color-dark-grey: #333;
 
+  --font-size-xl: 40px;
+  --font-size-l: 24px;
+  --font-size-m: 20px;
+  --font-size-s: 16px;
+
+  --space-xxl: 36px;
+  --space-xl: 30px;
+  --space-l: 24px;
+  --space-m: 18px;
+  --space-s: 12px;
+  --space-xs: 6px;
+
+  --box-shadow: 4px 8px 30px rgba(28, 166, 207, 0.3);
+
+  --animation-curve: cubic-bezier(0.55, 0, 0.1, 1.2);
 }

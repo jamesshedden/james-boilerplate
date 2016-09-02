@@ -1,0 +1,21 @@
+.section-link {
+  box-shadow: 0;
+  transition: all 0.4s ease;
+}
+
+.section-link:hover {
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+
+.section-link:hover .section-link__heading {
+  color: var(--color-blue);
+}
+
+.section-link__arrow-icon * {
+  fill: var(--color-blue);
+}
+
+.section-link:hover .section-link__arrow-icon * {
+  fill: var(--color-red);
+}

@@ -1,6 +1,25 @@
+@keyframes arrowBounceRight {
+  0% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(10px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .section-link {
   box-shadow: 0;
   transition: all 0.4s ease;
+}
+
+.section-link__heading {
+  transition: color 0.2s var(--animation-curve);
 }
 
 .section-link:hover {
@@ -12,10 +31,6 @@
   color: var(--color-blue);
 }
 
-.section-link__arrow-icon * {
-  fill: var(--color-blue);
-}
-
-.section-link:hover .section-link__arrow-icon * {
-  fill: var(--color-red);
+.section-link:hover .section-link__arrow {
+  animation: arrowBounceRight 0.3s forwards;
 }

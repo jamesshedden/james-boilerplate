@@ -24,6 +24,26 @@
   color: var(--color-dark-grey);
 }
 
+.u-color-medium-grey {
+  color: var(--color-medium-grey);
+}
+
+.u-color-grey {
+  color: var(--color-grey);
+}
+
+.u-color-red-hover:hover {
+  color: var(--color-red);
+}
+
+.u-color-blue-hover:hover {
+  color: var(--color-blue);
+}
+
+.u-font-size-xxl {
+  font-size: var(--font-size-xxl);
+}
+
 .u-font-size-xl {
   font-size: var(--font-size-xl);
 }
@@ -40,14 +60,43 @@
   font-size: var(--font-size-s);
 }
 
+@media (max-width: 820px) {
+  .u-font-size-xxl {
+    font-size: var(--font-size-xl);
+  }
+
+  .u-font-size-xl {
+    font-size: var(--font-size-l);
+  }
+
+  .u-font-size-l {
+    font-size: var(--font-size-m);
+  }
+
+  .u-font-size-m {
+    font-size: var(--font-size-s);
+  }
+
+  .u-font-size-s {
+    font-size: var(--font-size-xs);
+  }
+}
+
 .u-link {
   padding-bottom: 1px;
+  transition: 0.2s color var(--animation-curve),
+              0.2s border-color var(--animation-curve);
 }
 
 .u-link, .u-link:visited {
   text-decoration: none;
   color: var(--color-red);
   border-bottom: 1px solid var(--color-blue);
+}
+
+.u-inactive-link {
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--color-medium-grey);
 }
 
 .u-link:hover, .u-link:active {
@@ -59,8 +108,16 @@
   background: var(--color-yellow);
 }
 
+.u-background-white {
+  background: white;
+}
+
 .u-display-block {
   display: block;
+}
+
+.u-display-inline-block {
+  display: inline-block;
 }
 
 .u-text-decoration-none {
@@ -69,4 +126,64 @@
 
 .u-text-align-center {
   text-align: center;
+}
+
+.u-position-relative {
+  position: relative;
+}
+
+.u-position-absolute {
+  position: absolute;
+}
+
+.u-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.u-nudge-B1 {
+  position: relative;
+  bottom: 1px;
+}
+
+.u-nudge-B2 {
+  position: relative;
+  bottom: 2px;
+}
+
+.u-nudge-L5 {
+  position: relative;
+  left: 5px;
+}
+
+.u-z-index-1 {
+  z-index: 1;
+}
+
+.u-float-left {
+  float: left;
+}
+
+.u-center {
+  margin: 0 auto;
+}
+
+@media (max-width: 820px) {
+  .u-md-nudge-T2 {
+    position: relative;
+    top: 2px;
+  }
+}
+
+@media (max-width: 590px) {
+  .u-sm-display-none {
+    display: none;
+  }
+
+  .u-sm-size-1of2 {
+    width: 50%;
+  }
+
+  .u-sm-text-align-left {
+    text-align: left;
+  }
 }

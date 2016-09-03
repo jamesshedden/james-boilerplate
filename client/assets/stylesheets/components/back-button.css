@@ -1,0 +1,28 @@
+@keyframes arrowBounceLeft {
+  0% {
+    transform: rotate(180deg) translateX(-5px);
+  }
+
+  50% {
+    transform: rotate(180deg) translateX(10px);
+  }
+
+  100% {
+    transform: rotate(180deg) translateX(0);
+  }
+}
+
+.back-button {
+  top: var(--space-m);
+  left: var(--space-m);
+}
+
+.back-button:hover .back-button__arrow {
+  animation: arrowBounceLeft 0.3s forwards;
+}
+
+@media (max-width: 590px) {
+  .back-button {
+    left: var(--space-xl);
+  }
+}

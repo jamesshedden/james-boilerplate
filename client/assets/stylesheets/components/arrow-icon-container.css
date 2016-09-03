@@ -1,0 +1,7 @@
+.arrow-icon-container__icon * {
+  fill: var(--color-blue);
+}
+
+.arrow-icon-container:hover .arrow-icon-container__icon * {
+  fill: var(--color-red);
+}

@@ -1,9 +1,15 @@
 @import 'variables.css';
 @import 'shared.css';
-@import 'fonts/bagnard/bagnard.css';
+@import 'fonts/bagnard.css';
+@import 'fonts/gt-walsheim.css';
 
+@import 'components/arrow-icon-container.css';
+@import 'components/back-button.css';
+@import 'components/image-frame.css';
+@import 'components/name.css';
 @import 'components/section-link.css';
 @import 'components/site-container.css';
+@import 'components/video-frame.css';
 
 @import 'utilities.css';
 @import 'utilities/space.css';

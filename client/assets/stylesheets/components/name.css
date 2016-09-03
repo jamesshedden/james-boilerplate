@@ -1,0 +1,19 @@
+.name:hover {
+  cursor: pointer;
+}
+
+.name__letter {
+  display: inline-block;
+  transform: translateY(0);
+  transition: 0.2s transform var(--animation-curve),
+              0.2s color var(--animation-curve);
+}
+
+.name__letter:hover {
+  transform: translateY(-4px);
+  color: var(--color-blue);
+}
+
+.name__letter:nth-child(2n):hover {
+  color: var(--color-red);
+}

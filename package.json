@@ -24,6 +24,7 @@
   "jspm": {
     "directories": {},
     "dependencies": {
+      "lodash": "npm:lodash@^4.16.6",
       "normalize.css": "github:necolas/normalize.css@^3.0.2"
     },
     "devDependencies": {

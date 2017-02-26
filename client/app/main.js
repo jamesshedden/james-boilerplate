@@ -153,7 +153,7 @@ function getName(chosenName, wrongName) {
     el = `
       <form id="art-form">
         <label for="art-form-submit">
-          <p>${wrongName}? <em>What a lovely name</em>! Well, ${wrongName}, would you like to see some art?</p>
+          <p>${wrongName}? <em>What a coincidence</em>! Well, ${wrongName}, would you like to see some art?</p>
         </label>
 
         <p>
@@ -183,16 +183,13 @@ function getName(chosenName, wrongName) {
 }
 
 $(document).ready(function(){
-  getWrongName().done(function(response){
-    let wrongName = response[0].name;
-    let nameForm = $('#name-form');
+  let wrongName = 'Robert';
+  let nameForm = $('#name-form');
 
-    $('#name-form').on('submit', function(e){
-      let chosenName = $('#name-form-name').val();
-      console.log(chosenName);
-      e.preventDefault();
-      this.remove();
-      getName(chosenName, wrongName);
-    });
+  $('#name-form').on('submit', function(e){
+    let chosenName = $('#name-form-name').val();
+    e.preventDefault();
+    this.remove();
+    getName(chosenName, wrongName);
   });
 });

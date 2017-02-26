@@ -10,7 +10,7 @@
     "autoprefixer-core": "^5.1.8",
     "connect": "^3.3.5",
     "fb-flo": "^0.4.0",
-    "jspm": "^0.15.0-beta",
+    "jspm": "*",
     "lodash": "^3.10.1",
     "minimist": "^1.1.1",
     "opn": "^1.0.1",
@@ -22,7 +22,6 @@
     "write-file-stdout": "0.0.2"
   },
   "jspm": {
-    "directories": {},
     "dependencies": {
       "jquery": "github:components/jquery@^2.1.4",
       "lodash": "npm:lodash@^3.10.1",
@@ -37,5 +36,8 @@
       "transpileES6": true,
       "minify": true
     }
+  },
+  "dependencies": {
+    "jspm": "^0.16.52"
   }
 }
